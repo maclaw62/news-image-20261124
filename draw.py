@@ -79,8 +79,8 @@ def icon_building_hit(draw, x, y, s, color=NAVY):
     # windows: lit / broken
     for row in range(3):
         for col in range(4):
-            wx = bx0 + 14 + col * ((bw - 28) // 3)
-            wy = by0 + 22 + row * ((bh - 40) // 2)
+            wx = bx0 + 14 + col * ((bw - 52) // 3)
+            wy = by0 + 14 + row * ((bh - 48) // 2)
             if (row, col) in [(0, 1), (1, 2)]:
                 # blown-out window: dark hole with jagged edge
                 draw.polygon([(wx, wy), (wx + 26, wy + 4), (wx + 22, wy + 26),
